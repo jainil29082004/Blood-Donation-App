@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize a Camp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a>Blood Shelf</a>
+            <button onclick="window.location.href='index.html'">HOME</button>
+            <a href="#">ABOUT US</a>
+            <button onclick="window.location.href='organize_camp.html'">ORGANIZE A CAMP</button>
+            <button onclick="window.location.href='Learnmore.html'">SPREAD AWARENESS</button>
+        </div>
+        <button>SUPPORT US</button>
+    </div>
+    <header>
+        <div class="container">
+            <h2>Organize a Blood Donation Camp</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="camp-form" action="submit_camp.php" method="POST">
+            <label for="organization-name">Organization Name:</label>
+            <input type="text" id="organization-name" name="organization-name" required><br>
+            <label for="camp-name">Camp Name:</label>
+            <input type="text" id="camp-name" name="camp-name" required><br>
+            <label for="camp-location">Location:</label>
+            <input type="text" id="camp-location" name="camp-location" required><br>
+            <label for="camp-date">Date:</label>
+            <input type="date" id="camp-date" name="camp-date" required><br>
+            <label for="camp-details">Details:</label>
+            <textarea id="camp-details" name="camp-details" rows="4" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at: example@bloodbank.com</p>
+        </div>
+    </footer>
+</body>
+</html>

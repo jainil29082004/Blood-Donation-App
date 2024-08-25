@@ -1,0 +1,327 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, button, input, select {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.navbar {
+    background-color: #f44336;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    position: sticky;
+    z-index: 1;
+}
+
+.navbar a, .navbar button {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar a:hover, .navbar button:hover {
+    background-color: #d32f2f;
+    border-radius: 4px;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f44336;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-left: 20px; /* Adjusted spacing for better alignment */
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 20px; /* Adjusted spacing for better alignment */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.hero {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center; /* Centered hero content */
+}
+
+.hero .carousel {
+    display: flex;
+    justify-content: center; /* Centered carousel */
+    margin-bottom: 20px; /* Added margin for separation */
+}
+
+.hero-content {
+    max-width: 600px; /* Limiting width for better readability */
+    margin: 0 auto; /* Centering content */
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+.about, .donor-form, .events {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center; /* Centered content */
+}
+
+.about h2, .donor-form h2, .events h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p, .donor-form p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.carousel {
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+    width: 1500px;
+    height: 300px;
+    margin: auto;
+    animation: carousel 10s infinite linear;
+}
+.carousel img {
+    width: 500px;
+    height: 300px;
+}
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.events {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events li {
+    margin-bottom: 10px;
+}
+
+.events li span {
+    font-weight: bold;
+}
+.content {
+    margin: 20px;
+}
+.content h2, .content p {
+    margin-bottom: 15px;
+}
+.content button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background-color: rgb(255, 252, 252);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: calc(50% - 40px);
+}
+
+.card:hover{
+    background-color: #f2cbd3;
+}
+
+.card h3, .card p {
+    margin-bottom: 15px;
+}
+.card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+h2{
+    padding-top: 10px;
+}
+.impact {
+    background-color: #900;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.stat h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+/* CSS for organize_camp.html */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 2px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+.awareness-camp {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.awareness-camp h2 {
+    color: #900;
+    margin-bottom: 15px;
+}
+.awareness-camp p, .awareness-camp ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.awareness-camp ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+.footer{
+    display: flex;
+ }
+ .social-media{
+    display: flex;
+ }
+ .social-media a {
+    margin-left: 10px;
+ }
